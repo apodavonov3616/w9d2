@@ -1,6 +1,11 @@
-const View = // require appropriate file
-const Game = // require appropriate file
+const View = require("./ttt-view")
+const Game = require("../ttt_node/game")
+
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Your code here
+
+  const figureSelect = document.querySelector(".ttt")
+
+  const game1 = new Game()
+  new View(game1, figureSelect)
 });
